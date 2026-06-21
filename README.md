@@ -14,10 +14,10 @@ If you have reset less connection version then it requires severel tries to star
 
 If you want to modify assembler file and compile hex file then you need also the sda8051 assembler which is part of SDCC package and packihx tool. To build and create hex file
 
-`
+```
 sdas8051  -o ./intex.asm
 sdld -i ./intex.rel
 packihx ./intex.ihx > intex.hex
-`
+```
 
 To make the lamp turn automatically on at night, you need to connect a light sensor to the pin 8 (P2.0). You can use one of the ready modules or solder it yourself. The only requirement is the output should be high in the dark and low at light. The module and light element must be placed inside the lamp and water tightness must be observed.
